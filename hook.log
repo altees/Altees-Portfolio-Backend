@@ -1,0 +1,6 @@
+Microsoft Windows [Version 10.0.26200.8655]
+(c) Microsoft Corporation. All rights reserved.
+
+G:\ecom\Altees-Portfolio-Backend>{"session_id":"f347c450-8f64-4ffb-bf66-912947f185a2","transcript_path":"C:\\Users\\Altees\\.claude\\projects\\G--ecom-Altees-Portfolio-Backend\\f347c450-8f64-4ffb-bf66-912947f185a2.jsonl","cwd":"G:\\ecom\\Altees-Portfolio-Backend","permission_mode":"default","effort":{"level":"high"},"hook_event_name":"PreToolUse","tool_name":"Read","tool_input":{"file_path":"G:\\ecom\\Altees-Portfolio-Backend\\src\\main\\resources\\application.yaml"},"tool_use_id":"toolu_01MfnTepMsAcqqe9sS3fuk2R"}
+
+G:\ecom\Altees-Portfolio-Backend>

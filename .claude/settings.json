@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($conn = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue; if \\($conn\\) { $pids = $conn.OwningProcess | Sort-Object -Unique; foreach \\($p in $pids\\) { $proc = Get-Process -Id $p -ErrorAction SilentlyContinue; Write-Host \"PID $p \\($\\($proc.ProcessName\\)\\) — killing\"; Stop-Process -Id $p -Force -ErrorAction SilentlyContinue }; Write-Host \"Done.\" } else { Write-Host \"Nothing listening on port 8080.\" })",
+      "Skill(update-config)",
+      "PowerShell(echo '{}' | powershell -Command \"Write-Host 'Hello! Java version:'; java -version\")"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd /c echo Hook fired at %DATE% %TIME% >> hook.log"          
+	}
+        ]
+      }
+    ]
+  }
+}
